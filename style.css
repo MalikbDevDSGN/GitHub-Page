@@ -1,31 +1,82 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  html, body {
+/* CSS VARIABLES */
+
+:root{
+    --color-primary:#fefefe;
+    --color-secondary:#f6f8ff;
+
+    --text-color:#4b6a9b;
+    --sub-color:#697c9a;
+
+    --button-color:#0079ff;
+
+    --dark-numbers:#2B3442;
+
+    /* Dark Mode  */
+
+    /* --button-color:#0079ff; */
+    /* --color-primary:#fefefe; */
+    --dark-primary:#141d2f;
+    --darksecondary-color:#1e2a47;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto 90%;
+    grid-template-areas: 
+    "header"
+    "search_area"
+    "content_area";
+    background-color: aliceblue;
     height: 100%;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
-  
+}
+
+/* Header */
+.header_top{
+   display: flex;
+   grid-area: header;
+   border: solid 2px  black;
+   margin: 20px;
+   padding: 5px;
+}
+
+/* Search Container */
+ .searchbar-container{
+    display:flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: #2B3442;
+    grid-area: search_area;
+ }
+
+ .searchbar-container img{
+   
+   margin-right:10px;
+   
+ }
+
+ .searchbar-container input{
+    width: 500px;
+    margin-right:10px;
+    color:var(--text-color);
+ }
+ .searchbar-container button{
+    background-color:var(--button-color);
+    color: white;
+    border: none;
+ }
+ /* Main Section */
+
+main{
+   display:inline-block;
+   align-items: center;
+   justify-content: center;
+   height: 750px;
+   width: 950px;
+   margin: 20px;
+   border: 5px solid black;
+
+}

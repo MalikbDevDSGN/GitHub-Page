@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 /* CSS VARIABLES */
 
 :root{
@@ -11,6 +13,8 @@
 
     --dark-numbers:#2B3442;
 
+    --font-main:'Space Mono', monospace;
+
     /* Dark Mode  */
 
     /* --button-color:#0079ff; */
@@ -18,6 +22,12 @@
     --dark-primary:#141d2f;
     --darksecondary-color:#1e2a47;
 }
+body{
+   font-family: var(--font-main);
+   color: var(--text-color);
+}
+
+/* ------------------------------------ */
 
 .wrapper{
     display: grid;
@@ -27,56 +37,144 @@
     "header"
     "search_area"
     "content_area";
-    background-color: aliceblue;
+    background-color: var(--color-secondary);
     height: 100%;
 }
 
-/* Header */
-.header_top{
+/* Content Box */
+
+.content{
    display: flex;
-   grid-area: header;
-   border: solid 2px  black;
-   margin: 20px;
-   padding: 5px;
+   flex-direction: column;
+   align-items: center;
+   min-width: 375px;
 }
 
-/* Search Container */
- .searchbar-container{
-    display:flex;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: #2B3442;
-    grid-area: search_area;
- }
+.header_top{
+     display: flex;
+     flex-direction: row;
+     justify-content:space-between;
+     min-width: 327px; 
+     margin: 36px 24px 31px 24px;
+}
 
- .searchbar-container img{
+.header_top h1{
+   font-size: 26px;
+   font-weight: 700;
+}
+
+.header_top figcaption{
+   font-size: 13px;
+   font-weight: 700;
+   color: var(--text-color);
+}
+/* Searchbar Section */
+.searchbar{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 10px;
+   border-radius: 20px;
+   background-color:#ffffff;
+   min-width: 327px;
+   margin-bottom: 16px;
+   box-shadow: 1px 8px 8px lightgray;
+}
+.searchbar img{
+   margin: 10px;
+}
+.searchbar input{
+   border: none;
+   font-size:medium;
+}
+
+.searchbar button{
+   width: 84px;
+   height: 46px;
+   color: white;
+   background-color: var(--button-color);
+   border: none;
+   border-radius: 10px;
+}
+/* main content */
+
+.main-content{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   min-width: 327px;
+   background-color: #ffffff;
+
+   border-radius: 20px;
+   box-shadow: 1px 8px 8px lightgray;
+}
+
+.main-top{
+   display: flex;
+   flex-direction:row;
+   padding:10px;
+}
+.main-top-text{
+   margin-left: 10px;
+}
+ 
+/* Bio */
+
+#bio-section{
+   display: flex;
+   width: 274px;
+   text-align: left;
+   height: fit-content;
+   font-size: 13px;
+   line-height: 25px;
+   padding: 20px;
    
-   margin-right:10px;
+}
+
+.stats{
+   display: flex;
+   flex-direction: column;
    
- }
+}
 
- .searchbar-container input{
-    width: 500px;
-    margin-right:10px;
-    color:var(--text-color);
- }
- .searchbar-container button{
-    background-color:var(--button-color);
-    color: white;
-    border: none;
- }
- /* Main Section */
-
-main{
-   display:inline-block;
+#profile-stats{
+   display: flex;
+   justify-content:center;
    align-items: center;
-   justify-content: center;
-   height: 750px;
-   width: 950px;
-   margin: 20px;
-   border: 5px solid black;
+   border-radius: 20px;
+   margin: 10px;
+   padding: 10px;
+   background-color:var(--color-secondary) ;
+   justify-content: space-evenly; 
+}
 
+.profile-stats-box{
+   font-weight: 400;
+   text-align: center;
+   margin: 10px;
+}
+
+.profile-stats-box h3{
+   font-size: 11px;
+   font-weight: lighter;
+}
+
+.numbers{
+   font-weight: bold;
+   color: var(--dark-numbers);
+}
+
+/* Social */
+
+.social-section{
+   display: flex;
+   flex-direction: column;
+   margin: 24px;
+}
+.social-icons{
+   display: flex;
+   margin: 10px;
+}
+
+.social-icons img{
+   margin-right: 13px;
 }

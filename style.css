@@ -179,6 +179,8 @@ body{
    margin-right: 13px;
 }
 
+/* Tablet View */
+
 @media only screen and (min-width: 728px) {
    .header_top{
       width: 573px;
@@ -200,6 +202,43 @@ body{
 
    #bio-section{
       width: 493px;
+   }
+
+   .social-section{
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      grid-template-areas: 
+      "a b"
+      "c d"
+      ;
+   }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1440px) {
+   .header_top{
+      width: 730px;
+   }
+
+   .searchbar{
+      width: 730px;
+   }
+   
+   .main-content{
+      width:730px;
+   }
+   .main-top{
+      margin:40px;
+   }
+   .main-top-text{
+      margin-left: 40px;
+   }
+
+   #bio-section{
+      
+      width: 480px;
    }
 
    .social-section{

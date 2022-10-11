@@ -178,3 +178,37 @@ body{
 .social-icons img{
    margin-right: 13px;
 }
+
+@media only screen and (min-width: 728px) {
+   .header_top{
+      width: 573px;
+   }
+
+   .searchbar{
+      width: 573px;
+   }
+   
+   .main-content{
+      width:573px;
+   }
+   .main-top{
+      margin:20px;
+   }
+   .main-top-text{
+      margin-left: 50px;
+   }
+
+   #bio-section{
+      width: 493px;
+   }
+
+   .social-section{
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      grid-template-areas: 
+      "a b"
+      "c d"
+      ;
+   }
+}

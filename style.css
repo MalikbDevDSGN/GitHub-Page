@@ -48,26 +48,42 @@ body{
    flex-direction: column;
    align-items: center;
    min-width: 375px;
+   margin-top: 30px;
+   padding: 0 20px;
 }
+
+/* Header */
 
 .header_top{
      display: flex;
      flex-direction: row;
      justify-content:space-between;
      min-width: 327px; 
-     margin: 36px 24px 31px 24px;
+     margin-bottom: 36px;
 }
 
 .header_top h1{
    font-size: 26px;
    font-weight: 700;
+   color: var(--dark-primary);
 }
 
 .header_top figcaption{
    font-size: 13px;
    font-weight: 700;
    color: var(--text-color);
+   text-transform:uppercase;
+   letter-spacing:2.5px;
+   margin-right: 16px;
 }
+
+.mode_switcher{
+   display: flex;
+   flex-direction: row;
+}
+
+
+
 /* Searchbar Section */
 .searchbar{
    display: flex;
@@ -117,6 +133,7 @@ body{
    margin-left: 10px;
 }
  
+
 /* Bio */
 
 #bio-section{

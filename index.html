@@ -38,9 +38,9 @@
             <img src="/media/Bitmap.png" alt="github profile" />
           </figure>
           <div class="main-top-text">
-          <h2>The Octant</h2>
+          <h2 id="profileName">The Octant</h2>
           <p><a href="#">@octcat</a></p>
-          <p>Joined 16 Jan 2022</p>
+          <p id="joinDate">Joined 16 Jan 2022</p>
         </div>
         </div>
         <div id="bio-section">
@@ -50,45 +50,46 @@
           <div id="profile-stats">
             <div class="profile-stats-box">
               <h3>Repos</h3>
-              <span class="numbers">8</span>
+              <span id="repos" class="numbers">8</span>
             </div>
             <div class="profile-stats-box">
               <h3>Followers</h3>
-              <span class="numbers">3938</span>
+              <span id="followers" class="numbers">3938</span>
             </div>
             <div class="profile-stats-box">
               <h3>Following</h3>
-              <span class="numbers">9</span>
+              <span id="following" class="numbers">9</span>
             </div>
           </div>
           <div class="social-section">
             <div class="social-icons">
               <figure>
-                <img src="/media/icon-location.svg" alt="location icon" />
+                <img id="avatar" src="/media/icon-location.svg" alt="location icon" />
               </figure>
-              <p>San Francisco</p>
+              <p id="location">San Francisco</p>
             </div>
             <div class="social-icons">
               <figure>
                 <img src="media/icon-twitter.svg" alt="twitter icon" />
               </figure>
-              <p>Not available</p>
+              <p id="twitter">Not available</p>
             </div>
             <div class="social-icons">
               <figure>
                 <img src="media/icon-website.svg" alt="website icon" />
               </figure>
-              <p>https://github.org</p>
+              <p id="githubUrl">https://github.org</p>
             </div>
             <div class="social-icons">
               <figure>
                 <img src="media/icon-company.svg" alt="company icon" />
               </figure>
-              <p>@github</p>
+              <p id="gitTag">@github</p>
             </div>
           </div>
         </div>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

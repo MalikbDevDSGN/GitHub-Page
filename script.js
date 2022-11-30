@@ -12,6 +12,13 @@ let gitTwitter = document.querySelector('#twitter');
 let githubUrl = document.querySelector('#githubUrl');
 let githubAvatar = document.querySelector('#avatar.img');
 
+const toggleThemeButton = document.querySelector("#toggle-theme")
+
+toggleThemeButton.addEventListener("click", () =>{
+
+  document.body.classList.toggle("dark");
+
+});
 
 let searchInputValue = '';
 

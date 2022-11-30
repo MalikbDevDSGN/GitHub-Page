@@ -22,6 +22,13 @@
     --dark-primary:#141d2f;
     --darksecondary-color:#1e2a47;
 }
+
+.dark{
+   --color-primary:#141d2f;
+   --color-secondary:#1e2a47;
+   --text-color:#f6f8ff;
+}
+
 body{
    font-family: var(--font-main);
    color: var(--text-color);
@@ -159,7 +166,7 @@ body{
    
 }
 
-#profile-stats{
+.profile-stats{
    display: flex;
    justify-content:center;
    align-items: center;

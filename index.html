@@ -14,14 +14,14 @@
       <header class="header_top">
         <h1 id="headerTitle">devfinder</h1>
         <figure class="mode_switcher">
-          <figcaption>Dark</figcaption>
-          <img src="/media/moon.svg" />
+          <figcaption><button id="toggle-theme">Dark</button></figcaption>
+          <img src="/media/moon.svg"  alt="crescent moon"/>
         </figure>
       </header>
       <section class="searchbar">
         <div class="search_input">
         <figure>
-          <img src="/media/Shape 2.png" />
+          <img src="/media/Shape 2.png" alt="magnifying icon"/>
         </figure>
         <input
           type="text"
@@ -47,19 +47,20 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam eaque non neque corporis? Quibusdam aspernatur earum, perspiciatis eligendi reprehenderit dicta placeat inventore nobis odit pariatur maxime, beatae veritatis sequi.</p>
       </div>
         <div class="stats">
-          <div id="profile-stats">
+          <div class="profile-stats">
             <div class="profile-stats-box">
-              <h3>Repos</h3>
-              <span id="repos" class="numbers">8</span>
+              <p class="profile-stats-title">Repos</p>
+              <p class="profile-stats-description" id="repos">8</p>
             </div>
             <div class="profile-stats-box">
-              <h3>Followers</h3>
-              <span id="followers" class="numbers">3938</span>
+              <p class="profile-stats-title">Followers</p>
+              <p class="profile-stats-description" id="followers">3938</p>
             </div>
             <div class="profile-stats-box">
-              <h3>Following</h3>
-              <span id="following" class="numbers">9</span>
+              <p class="profile-stats-title">Following</p>
+              <p class="profile-stats-description" id="number">9</p>
             </div>
+          </div>
           </div>
           <div class="social-section">
             <div class="social-icons">

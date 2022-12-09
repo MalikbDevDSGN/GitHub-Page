@@ -50,4 +50,4 @@ const getUserData = (userName) => {
 
 searchButton.addEventListener('click', () => getUserData(searchInputValue));
 
-//   abhishekjakhar
+

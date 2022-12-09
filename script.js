@@ -1,5 +1,5 @@
 const searchInput = document.querySelector("input");
-const searchButton = document.querySelector('button');
+const searchButton = document.querySelector('.search_button');
 
 let profileName = document.querySelector('#profileName');
 let joinDate = document.querySelector('#joinDate');
@@ -37,7 +37,7 @@ searchInput.addEventListener('input', (e) =>{
   gitLocation.textContent = data.location;
   gitTwitter.textContent = data.twitter_username;
   githubUrl.textContent = data.html_url;
-  // githubAvatar = data.avatar_url;
+  githubAvatar = data.avatar_url;
 
 
  };
@@ -50,4 +50,4 @@ const getUserData = (userName) => {
 
 searchButton.addEventListener('click', () => getUserData(searchInputValue));
 
-// abhishekjakhar
+//   abhishekjakhar
